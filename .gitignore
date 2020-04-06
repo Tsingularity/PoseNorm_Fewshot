@@ -1,0 +1,10 @@
+# ignore all the model and log files
+model_*.pth
+events.*
+*.log
+
+# ignore python cache files
+*.pyc
+
+# OS generated files
+.DS_Store
