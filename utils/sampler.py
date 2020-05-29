@@ -106,22 +106,21 @@ class random_sampler(Sampler):
         class2id = deepcopy(self.class2id)        
         list_class_id = list(class2id.keys())
 
-        if way == len(list_class_id):
-            trial = 100
-
         for i in range(trial):
 
             id_list = []
  
             np.random.shuffle(list_class_id)
+            
+            picked_class = list_class_id[:way]
 
-            for key in list_class_id[:way]:
-                np.random.shuffle(class2id[key])
+            for cat in picked_class:
+                np.random.shuffle(class2id[cat])
                 
-            for j in range(way):
-                id_list.extend(class2id[j][:shot])
-            for j in range(way):
-                id_list.extend(class2id[j][shot:(shot+test_shot)])
+            for cat in picked_class:
+                id_list.extend(class2id[cat][:shot])
+            for cat in picked_class:
+                id_list.extend(class2id[cat][shot:(shot+test_shot)])
 
             yield id_list
 
