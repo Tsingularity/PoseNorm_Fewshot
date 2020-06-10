@@ -34,3 +34,16 @@ After training is complete, the script will automatically evaluate the final mod
 ## Train with less part annotation
 
 For the ablation study on training on the CUB dataset with less part annotation, navigate to `proto+PN_less_annot` in the `CUB` directory. The `.sh` scripts have been set to training with 20% part annotation and batch size 7. If you want to train with other percentages of annotation, change both the  `--percent` and `--batch_size` arguments in the scripts as described in the supplementary matrials.
+
+
+## Citation
+If you find our code or paper useful, please consider citing our work using the following bibtex:
+```
+@inproceedings{tang2020revisiting,
+  title={Revisiting Pose-Normalization for Fine-Grained Few-Shot Recognition},
+  author={Tang, Luming and Wertheimer, Davis and Hariharan, Bharath},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={14352--14361},
+  year={2020}
+}
+```
