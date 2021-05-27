@@ -47,3 +47,7 @@ If you find our code or paper useful, please consider citing our work using the 
   year={2020}
 }
 ```
+
+
+## Updates
+05/27/2021: As pointed out in this [issue](https://github.com/Tsingularity/PoseNorm_Fewshot/issues/2), the website for OID-Aircraft seems to be down for now. As an alternative for downloading the dataset, I upload one copy to this google drive [link](https://drive.google.com/file/d/10vKcoS6-JFEpioD_FStJZbWknFCfPOnU/view?usp=sharing). More details about the dataset could be found in its original [paper](https://www.robots.ox.ac.uk/~karen/pdf/vedaldi14understanding.pdf). If you wanna download the dataset from google drive via command line directly, please refer to this [line](https://github.com/Tsingularity/PoseNorm_Fewshot/blob/master/dataset/download.sh#L3) of code in `download.sh`, or you can refer to our recent [FRN](https://github.com/Tsingularity/FRN) repository for more details.
